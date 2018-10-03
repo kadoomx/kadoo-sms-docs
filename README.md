@@ -13,10 +13,11 @@ POST **/oauth/token**
 
 #### Request
 
-|param|value|
-|grant_type|client_credentials|
-|client_id|**CLIENT_ID**|
-|client_secret|**SECRET**|
+param | value
+------------ | -------------
+grant_type | client_credentials
+client_id | **CLIENT_ID**
+client_secret | **SECRET**
 
 Los datos de la API se encuentran desde el menú `API Keys`.
 
