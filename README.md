@@ -1,17 +1,17 @@
 ![alt text](logo.png)
 
-#Documentación
+# Documentación
 
 Documentación de la API de envios masivos Kadoo.
 
 URL Producción: **https://api-sms.kadoo.mx** <br/>
 URL Sandbox: **https://api-dev-sms.kadoo.mx**
 
-##Autenticación
+## Autenticación
 
 POST **/oauth/token**
 
-####Request
+#### Request
 
 |param|value|
 |grant_type|client_credentials|
@@ -21,7 +21,7 @@ POST **/oauth/token**
 Los datos de la API se encuentran desde el menú `API Keys`.
 
 
-####Response
+#### Response
 
 ```json
 {
@@ -31,7 +31,7 @@ Los datos de la API se encuentran desde el menú `API Keys`.
 }
 ```
 
-####Response si faltan datos
+#### Response si faltan datos
 
 ```json
 {
@@ -41,7 +41,7 @@ Los datos de la API se encuentran desde el menú `API Keys`.
 }
 ```
 
-####Response con datos inválidos
+#### Response con datos inválidos
 
 ````json
 {
@@ -54,7 +54,7 @@ Los datos de la API se encuentran desde el menú `API Keys`.
 
 POST **/message**
 
-####Payload
+#### Payload
 
 ````json
 {
@@ -63,7 +63,7 @@ POST **/message**
 }
 ````
 
-####Response
+#### Response
 
 ````json
 {
@@ -75,11 +75,11 @@ POST **/message**
 }
 ````
 
-##Ver detalle de envío
+## Ver detalle de envío
 
 GET **/message/{id}**
 
-####Response
+#### Response
 
 ````json
 {
@@ -97,7 +97,7 @@ GET **/message/{id}**
 }
 ````
 
-##Ver envíos
+## Ver envíos
 
 GET **/message**
 
@@ -109,7 +109,7 @@ GET **/message**
 * **text** (opcional)
 * **phone** (opcional, no es necesario que sea completo, puede ser una parte del número nada más)
 
-####Request
+#### Request
 
 ```json
 {
